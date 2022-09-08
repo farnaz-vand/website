@@ -1,0 +1,1452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Title block allowing child pages to override -->
+    <title>The Shave</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="The Shave HTML5 Barbershop theme" />
+    <meta name="keywords" content="fullscreen image, grid layout, isotope grid, transition, css3" />
+    <meta name="author" content="Spencer Bigum" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Style block allowing child pages to inject their own styles -->
+    <link href="css/revolution5.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-Awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <!--[if IE 9]>
+        <link href="css/shave-ie9-styles.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <![endif]-->
+
+    <script src="scripts/jquery.min.js"></script>
+
+        <!-- Script block allowing child pages to inject their own scripts -->
+    <script src="scripts/jquery.themepunch.tools.min.js"></script>
+    <script src="scripts/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="scripts/extensions/revolution.extension.video.min.js"></script>
+    
+</head>
+
+<body class="loading">
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!--
+    #################################
+        - Header Section -
+    #################################
+    -->
+    <header id="header" class="nav-shadow">
+        <!--company name-->
+        <a id="sv__logo" href="index.html">
+            <div class="sv__logo--img">
+                <img class="img-responsive logo-white" src="images/shave-logo-white.png" alt="The Shave barbershop HTML theme" />
+                <img class="img-responsive logo-black" src="images/shave-logo-black.png" alt="The Shave barbershop HTML theme" />
+            </div>
+            <h1>The Shave</h1>
+        </a>
+        <!-- Dropdown Nav -->
+        <div class="cd-dropdown-wrapper open-to-left">
+            <!-- Menu -->
+            <a href="#" class="cd-dropdown-trigger">Menu</a>
+            <nav class="cd-dropdown">
+                <!-- Barbershop name -->
+                <h2>The Shave</h2>
+                <a href="#0" class="cd-close">Close</a>
+                <!-- Nav content -->
+                <ul class="cd-dropdown-content">
+                    <!-- Search input -->
+                    <li>
+                        <form class="cd-search">
+                            <input type="search" placeholder="Search...">
+                        </form>
+                    </li>
+                    <!-- Book now btn for mobile -->
+                    <li class="mobile-modal book-now-m">
+                        <a data-toggle="modal" data-target="#bookNowModal">Book Today</a>
+                    </li>
+                    <!-- Service Icons -->
+                    <li class="has-children">
+                        <a href="service-shave.html">Our Services</a>
+                        <ul class="cd-dropdown-icons is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li class="see-all"><a href="about.html">Why Choose Us?</a></li>
+                            <!-- item -->
+                            <li>
+                                <a class="cd-dropdown-item item-1" href="service-shave.html">
+                                    <div class="icon-wrapper sv-icon">
+                                        <i class="icon-sv-razor"></i>
+                                    </div>
+                                    <h3>The Shave</h3>
+                                    <p>Simple way to hold data</p>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="cd-dropdown-item item-2" href="service-haircuts.html">
+                                    <div class="icon-wrapper sv-icon">
+                                        <i class="icon-sv-scissors"></i>
+                                    </div>
+                                    <h3>Haircuts</h3>
+                                    <p>1000+ Free Icons included</p>
+                                </a>
+                            </li>
+                            <!-- item -->
+                            <li>
+                                <a class="cd-dropdown-item item-3" href="service-beards.html">
+                                    <div class="icon-wrapper sv-icon">
+                                        <i class="icon-sv-mustache"></i>
+                                    </div>
+                                    <h3>Beards & Mustaches</h3>
+                                    <p>Add your own location easily</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- .cd-dropdown-icons -->
+                    </li>
+                    <!-- end theme features + icons -->
+                    <!-- Gallery -->
+                    <li class="has-children">
+                        <!-- Nav title -->
+                        <a href="gallery.html">Gallery</a>
+                        <ul class="cd-dropdown-gallery is-hidden">
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li class="see-all"><a href="features.html">Browse all features</a></li>
+                            <!-- Gallery Item 1 -->
+                            <li class="plus-effect">
+                                <a class="cd-dropdown-item" href="full-gallery.html">
+                                    <div class="hover-container">
+                                        <div class="plus-hover hidden-xs hidden-sm">
+                                            <i class="fa fa-plus-circle"></i>
+                                        </div>
+                                        <img src="images/nav/shave-nav-gallery-1.jpg" alt="Product Image">
+                                    </div>
+                                    <h3>Masonry Gallery</h3>
+                                </a>
+                            </li>
+                            <!-- Gallery Item 2 -->
+                            <li class="plus-effect">
+                                <a class="cd-dropdown-item" href="gallery-3-grid.html">
+                                    <div class="hover-container">
+                                        <div class="plus-hover hidden-xs hidden-sm">
+                                            <i class="fa fa-plus-circle"></i>
+                                        </div>
+                                        <img src="images/nav/shave-nav-gallery-2.jpg" alt="Product Image">
+                                    </div>
+                                    <h3>3 Column grid</h3>
+                                </a>
+                            </li>
+                            <!-- Gallery Item 3 -->
+                            <li class="plus-effect">
+                                <a class="cd-dropdown-item" href="gallery-4-grid.html">
+                                    <div class="hover-container">
+                                        <div class="plus-hover hidden-xs hidden-sm">
+                                            <i class="fa fa-plus-circle"></i>
+                                        </div>
+                                        <img src="images/nav/shave-nav-gallery-3.jpg" alt="Product Image">
+                                    </div>
+                                    <h3>4 Column grid</h3>
+                                </a>
+                            </li>
+                            <!-- Gallery Item 4 -->
+                            <li class="plus-effect">
+                                <a class="cd-dropdown-item" href="gallery-5-grid.html">
+                                    <div class="hover-container">
+                                        <div class="plus-hover hidden-xs hidden-sm">
+                                            <i class="fa fa-plus-circle"></i>
+                                        </div>
+                                        <img src="images/nav/shave-nav-gallery-4.jpg" alt="Product Image">
+                                    </div>
+                                    <h3>5 Column grid</h3>
+                                </a>
+                            </li>
+                        </ul>
+                      </li>
+                      <!-- end gallery -->
+                      <!-- Price list -->
+                      <li class="has-children">
+                          <!-- Nav title -->
+                          <a href="index.html">Prices & Options</a>
+                          <ul class="cd-secondary-dropdown is-hidden">
+                              <li class="go-back"><a href="#0">Menu</a></li>
+                              <li class="see-all"><a href="prices.html">View All Prices</a></li>
+                              <!-- Sub-item -->
+                              <li class="has-children">
+                                  <!-- Sub-item title -->
+                                  <a href="service-shave.html">Get a haircut</a>
+                                  <!-- Sub-item contents -->
+                                  <ul class="is-hidden">
+                                      <li class="go-back"><a href="#0">Haircuts</a></li>
+                                      <li class="see-all">
+                                      </li>
+                                      <li class="has-children">
+                                          <a href="#0">Mens Cuts</a>
+                                          <ul class="is-hidden">
+                                              <li class="go-back"><a href="#0">Go back</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Classic Cut</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Buzz Cut</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Cut &amp; Shave</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Color</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Shampoo</a></li>
+                                          </ul>
+                                      </li>
+                                      <li class="has-children">
+                                          <a href="#0">Kids Cuts</a>
+                                          <ul class="is-hidden">
+                                              <li class="go-back"><a href="#0">Kids Cuts</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Kids Cut</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Full style</a></li>
+                                              <li><a href="prices.html#tab=haircuts">Shampoo</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="contact.html">Get a consultation</a></li>
+                                      <li><a href="team.html">Find a barber</a></li>
+                                  </ul>
+                                  <!-- end Sub-item contents -->
+                              </li>
+                              <!-- end sub-item -->
+                              <!-- Sub-item -->
+                              <li class="has-children">
+                                  <!-- Sub-item title -->
+                                  <a href="service-shave.html">The Shave</a>
+                                  <!-- Sub-item contents -->
+                                  <ul class="is-hidden">
+                                      <li class="go-back"><a href="#0">Shave</a></li>
+                                      <li class="see-all">
+                                      </li>
+                                      <li><a href="prices.html#tab=shave">The Signature Shave</a></li>
+                                      <li><a href="prices.html#tab=shave">The Royal Shave</a></li>
+                                      <li><a href="prices.html#tab=shave">Traditional Shave</a></li>
+                                      <li><a href="prices.html#tab=shave">Razor edging</a></li>
+                                      <li><a href="prices.html#tab=shave">Head Shave</a></li>
+                                  </ul>
+                                  <!-- end sub-item contents -->
+                              </li>
+                              <!-- end sub-item -->
+                              <!-- Sub-item -->
+                              <li class="has-children">
+                                  <!-- Sub-item title -->
+                                  <a href="service-shave.html">Mustaches</a>
+                                  <!-- Sub-item contents -->
+                                  <ul class="is-hidden">
+                                      <li class="go-back"><a href="#0">Mustaches</a></li>
+                                      <li class="see-all">
+                                      </li>
+                                      <li><a href="prices.html#tab=beard-mustache">Mustache Trim</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Mustache Wax</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Style the Stash</a></li>
+                                  </ul>
+                                  <!-- end sub-item contents -->
+                              </li>
+                              <!-- end sub-item -->
+                              <!-- Sub-item -->
+                              <li class="has-children">
+                                  <!-- Sub-item title -->
+                                  <a href="service-shave.html">Beards</a>
+                                  <!-- Sub-item contents -->
+                                  <ul class="is-hidden">
+                                      <li class="go-back"><a href="#0">Beards</a></li>
+                                      <li class="see-all">
+                                      </li>
+                                      <li><a href="prices.html#tab=beard-mustache">Beard Trim</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Beard Waxing</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Goatee Trim</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Beard Sculpt</a></li>
+                                      <li><a href="prices.html#tab=beard-mustache">Beard Coloring</a></li>
+                                  </ul>
+                                  <!-- end sub-item contents -->
+                              </li>
+                              <!-- end sub-item -->
+                          </ul>
+                          <!-- end .cd-secondary-dropdown -->
+                      </li>
+                      <!-- end services -->
+                      <!-- Theme Features + Icons -->
+                      <li class="has-children">
+                          <!-- Nav title -->
+                          <a href="features.html">Features & options</a>
+                          <ul class="cd-dropdown-icons is-hidden">
+                              <li class="go-back"><a href="#0">Menu</a></li>
+                              <li class="see-all"><a href="features.html">Browse All Features</a></li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-1" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-diamond"></i>
+                                      </div>
+                                      <h3>Revolution Slider</h3>
+                                      <p>#1 Selling slider plugin</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-10" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-star-o"></i>
+                                      </div>
+                                      <h3>Hero / Parallax headers</h3>
+                                      <p>Strong page headers</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-8" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-code"></i>
+                                      </div>
+                                      <h3>Development</h3>
+                                      <p>Code crafted to perfection</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-7" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-columns"></i>
+                                      </div>
+                                      <h3>Stylish Layouts</h3>
+                                      <p>Sleek page layouts</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-9" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-toggle-off"></i>
+                                      </div>
+                                      <h3>Niche Theme</h3>
+                                      <p>Designed to perfection</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-4" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-picture-o"></i>
+                                      </div>
+                                      <h3>Beautiful Gallery</h3>
+                                      <p>Isotope Gallery looks amazing</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-5" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-television"></i>
+                                      </div>
+                                      <h3>Fully Responsive</h3>
+                                      <p>Looks good on every device</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-3" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-map-marker"></i>
+                                      </div>
+                                      <h3>Google Map Service</h3>
+                                      <p>Add your own location easily</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-2" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-flag-o"></i>
+                                      </div>
+                                      <h3>Font Awesome Icons</h3>
+                                      <p>500+ Free Icons included</p>
+                                  </a>
+                              </li>
+                              <!-- item -->
+                              <li>
+                                  <a class="cd-dropdown-item item-6" href="features.html">
+                                      <div class="icon-wrapper">
+                                          <i class="fa fa-object-ungroup"></i>
+                                      </div>
+                                      <h3>Retina quality</h3>
+                                      <p>Looks amazing on all devices</p>
+                                  </a>
+                              </li>
+                          </ul>
+                          <!-- .cd-dropdown-icons -->
+                      </li>
+                      <!-- end theme features + icons -->
+                      <li class="single-item"><a href="team.html">Team</a></li>
+                      <li class="single-item"><a href="about.html">About</a></li>
+                      <li class="single-item"><a href="blog-index.html">Blog</a></li>
+                      <li class="single-item"><a href="contact.html">Contact</a></li>
+                  </ul>
+                  <!-- .cd-dropdown-content -->
+              </nav>
+              <!-- end nav -->
+          </div>
+          <!-- end cd-wrapper -->
+          <!-- Book now button -->
+          <div class="nav__book hidden-xs">
+              <div id="phone" class="quick-link white"><a href="#"><i class="fa fa-phone"></i></a></div>
+              <div id="hours" class="quick-link white"><a href="#"><i class="fa fa-clock-o"></i></a></div>
+              <a href="#" class="book__nav" data-toggle="modal" data-target="#bookNowModal">Book Now</a>
+          </div>
+      </header>
+      <!-- end header -->
+      <!--
+      #################################
+          - Main Shave Content -
+      #################################
+      -->
+      <main class="sv__main--content">
+          <!-- feature slider section -->
+          <div class="section container-fluid no-padding white-bg hero">
+              <article class="content tp-banner-container">
+                  <div id="rev_slider_46_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="notgeneric1" style="background-color:transparent;padding:0px;">
+                      <!-- START REVOLUTION SLIDER 5.0.7 fullscreen mode -->
+                      <div id="rev_slider_46_1" class="rev_slider fullscreenbanner tp-banner" style="display:none;" data-version="5.0.7">
+                          <ul>
+                              <!-- Slide -->
+                              <li data-index="rs-1" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/icons/slide1-60x60.png" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Craftsmen" data-description="">
+                                  <!-- MAIN IMAGE -->
+                                  <img src="images/feature-slider/shave-feature-1.jpg" alt="The Shave Barbershop HTML Theme" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                  <!-- LAYERS -->
+                                  <!-- LAYER NR. 1 -->
+                                  <div class="tp-caption sv-feature-Icon circle-boarder tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-1" data-x="['left','left','center','center']" data-hoffset="['700','550','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-165','-150','-130','-145','-125']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="icon-sv-razor"></i>
+                                  </div>
+                                  <!-- LAYER NR. 2 -->
+                                  <h2 class="tp-caption headline-left-right tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-2" data-x="['left','left','center','center']" data-hoffset="['700','550','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','10','-20','-20']" data-fontsize="['96','80','80','60','35']" data-lineheight="['96','80','80','60','35']" data-width="['700','550','550','450','305']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="on" data-elementdelay="0.6" style="z-index: 5; white-space: normal;">Masters <span>of</span> the Blade
+                                  </h2>
+                                  <!-- LAYER NR. 3 -->
+                                  <div class="tp-caption sv-feature-subtitle subtitle-left tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-3" data-x="['left','left','center','center']" data-hoffset="['700','550','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['155','150','152','95','75']" data-fontsize="['24','21','24','18','21']" data-lineheight="['32','28','32','21','24']" data-width="['700','600','455','550','350']" data-height="100" data-whitespace="[‘nowrap’,’normal’,’normal’,’normal’]" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="on" style="z-index: 6; white-space: normal; line-height: 20px;">The Shave barbershop is a full service, clean cut HTML5 theme, packed with features and a polished design. Walk ins welcome.
+                                  </div>
+                              </li>
+                              <!-- Slide -->
+                              <li data-index="rs-2" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/icons/slide2-60x60.png" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Creative" data-description="">
+                                  <!-- MAIN IMAGE -->
+                                  <img src="images/feature-slider/shave-feature-2.jpg" alt="The Shave Barbershop HTML Theme" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                  <!-- LAYERS -->
+                                  <!-- LAYER NR. 1 -->
+                                  <div class="tp-caption sv-feature-headline headline-left   tp-resizeme rs-parallaxlevel-0" id="slide-2-layer-1" data-x="['left','left','center','center']" data-hoffset="['180','150','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-40','-40','0','-20','-20']" data-fontsize="['96','80','80','60','35']" data-lineheight="['96','80','80','60','35']" data-width="['700','700','700','300','300']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="on" data-elementdelay="0.6" style="z-index: 5; white-space: nowrap;">Keeping it Classy
+                                  </div>
+                                  <!-- LAYER NR. 2 -->
+                                  <div class="tp-caption sv-feature-subtitle subtitle-left tp-resizeme rs-parallaxlevel-0" id="slide-2-layer-2" data-x="['left','left','center','center']" data-hoffset="['185','150','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['125','115','152','105','80']" data-fontsize="['24','21','24','18','21']" data-lineheight="['32','28','32','21','24']" data-width="['600','670','550','550','325']" data-height="100" data-whitespace="[‘nowrap’,’normal’,’normal’,’normal’]" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="on" style="z-index: 6; white-space: normal; line-height: 20px;">We’ve been cutting hair for 20 years, and like that bottle of scotch in your liquor cabinet, we’re getting better with age.
+                                  </div>
+                                  <!-- LAYER NR. 3 -->
+                                  <div class="tp-caption sv-feature-Icon circle-boarder  tp-resizeme rs-parallaxlevel-0" id="slide-2-layer-3" data-x="['left','left','center','center']" data-hoffset="['180','150','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-200','-200','-130','-140','-120']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="icon-sv-mustache"></i>
+                                  </div>
+                              </li>
+                              <!-- Slide -->
+                              <li data-index="rs-3" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/icons/slide3-60x60.png" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Innovative" data-description="">
+                                  <!-- MAIN IMAGE -->
+                                  <img src="images/feature-slider/shave-feature-3.jpg" alt="The Shave Barbershop HTML Theme" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                                  <!-- LAYERS -->
+                                  <!-- LAYER NR. 1 background overlay -->
+                                  <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:1;s:1500;e:Power3.easeInOut;" data-start="750" data-basealign="slide" data-responsive_offset="on" data-responsive="off" style="z-index: 5;background-color:rgba(0, 0, 0, 0.00);border-color:rgba(0, 0, 0, 0.50);">
+                                  </div>
+                                  <!-- LAYER NR. 1 -->
+                                  <div class="tp-caption sv-feature-Icon circle-boarder tp-resizeme rs-parallaxlevel-0" id="slide-1-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-156','-126','-130','-140','-120']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:default;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"><i class="icon-sv-design"></i>
+                                  </div>
+                                  <!-- LAYER NR. 3 -->
+                                  <div class="tp-caption sv-feature-headline   tp-resizeme rs-parallaxlevel-0" id="slide-3-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','-20','-20']" data-fontsize="['96','70','70','60','35']" data-lineheight="['96','70','70','60','35']" data-width="['1200','1200','800','800','400']" data-height="none" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">Innovation + Tradition
+                                  </div>
+                                  <!-- LAYER NR. 4 -->
+                                  <div class="tp-caption sv-feature-subtitle   tp-resizeme rs-parallaxlevel-0" id="slide-3-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['162','132','152','105','80']" data-fontsize="['24','21','24','18','21']" data-lineheight="['32','28','32','21','24']" data-width="['700','670','550','550','400']" data-height="100" data-whitespace="[‘nowrap’,’normal’,’normal’,’normal’]" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: normal;">You could say we’re a cut above the rest, but you’d be forgetting trim and shave.
+                                  </div>
+                                  <!-- LAYER NR. 5 -->
+                                  <div class="tp-caption rev-scroll-btn hidden-xs hidden-sm rs-parallaxlevel-0" id="slide-2-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['330','330','340','350','220']" data-width="35" data-height="55" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:50px;opacity:0;s:1000;s:1000;" data-start="2000" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"0px"}]' data-basealign="slide" data-responsive_offset="on" data-responsive="on" style="z-index: 9; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-size: px; line-height: px; font-weight: 100;border-color:rgba(255, 255, 255, 0.50);border-style:solid;border-width:1px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+                                      <span>
+                                                      </span>
+                                  </div>
+                              </li>
+                          </ul>
+                          <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                        </div>
+                        <!-- end revolution slider -->
+                    </div>
+                    <!-- end revolution wrapper -->
+                </article>
+                <!-- end container -->
+            </div>
+            <!-- end section -->
+            <!-- Featured Module One -->
+            <div class="section container-fluid svfm1__container no-padding">
+                <div class="angle-top" style="color: #fff;"></div>
+                <div class="inner-lg">
+                    <div class="sv__container--md">
+                        <div class="intro">
+                            <h6>Welcome to the shave</h6>
+                            <h2>A full service barbershop</h2>
+                            <p class="sub-copy">The Shave offers every facet of trim, cut and shave services. We are a highly skilled team of hair crafts-people with a penchant for perfectly groomed gents and a service-first mission to leave our clients looking their best.</p>
+                        </div>
+                        <div id="cascadeFeature" class="container inner-content-module svfm1__content">
+                            <!-- feature -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 svfm1__card">
+                                <figure class="svfm1__card--effect card-shadow-md">
+                                    <img class="img-responsive" src="images/services/feature-module-1/shave-service-shaving.jpg" alt="feature 1" />
+                                    <figcaption>
+                                        <div class="content">
+                                            <h2>Full Shave</h2>
+                                            <p class="hidden-sm">Where real men go for a shave</p>
+                                        </div>
+                                        <a href="service-shave.html">View more</a>
+                                    </figcaption>
+                                    <!-- end figcaption -->
+                                </figure>
+                                <!-- end figure -->
+                            </div>
+                            <!-- end feature 1 -->
+                            <!-- feature -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 svfm1__card">
+                                <figure class="svfm1__card--effect card-shadow-md">
+                                    <img class="img-responsive" src="images/services/feature-module-1/shave-service-beard.jpg" alt="feature 3" />
+                                    <figcaption>
+                                        <div class="content">
+                                            <h2>Beard / Stache</h2>
+                                            <p class="hidden-sm">Need a mustache trimming?</p>
+                                        </div>
+                                        <a href="service-beards.html">View more</a>
+                                    </figcaption>
+                                    <!-- end figcaption -->
+                                </figure>
+                                <!-- end figure -->
+                            </div>
+                            <!-- end feature 3 -->
+                            <!-- feature -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 svfm1__card">
+                                <figure class="svfm1__card--effect card-shadow-md">
+                                    <img class="img-responsive" src="images/services/feature-module-1/shave-service-haircut.jpg" alt="feature 2" />
+                                    <figcaption>
+                                        <div class="content">
+                                            <h2>Hair Cuts</h2>
+                                            <p class="hidden-sm">Fresh cuts that look good</p>
+                                        </div>
+                                        <a href="service-haircuts.html">View more</a>
+                                    </figcaption>
+                                    <!-- end figcaption -->
+                                </figure>
+                                <!-- end figure -->
+                            </div>
+                            <!-- end feature 2 -->
+                        </div>
+                        <!-- end container -->
+                    </div>
+                    <!-- end container md -->
+                </div>
+                <!-- end inner-lg -->
+            </div>
+            <!-- end section -->
+            <!-- Feature Module 2 -->
+            <div class="section container-fluid no-padding">
+                <div class="svfm2__wrapper">
+                    <!-- background image wrapper -->
+                    <div class="svfm2__wrapper--images">
+                        <div class="svfm2__image" data-title="hair-cuts" style="background-image: url(images/services/feature-module-2/shave-beard-gallery.jpg);">
+                        </div>
+                        <div class="svfm2__image" data-title="shaving" style="background-image: url(images/services/feature-module-2/shave-shaving-gallery.jpg);">
+                        </div>
+                        <div class="svfm2__image active" data-title="beard" style="background-image: url(images/services/feature-module-2/shave-haircut-gallery.jpg);">
+                        </div>
+                    </div>
+                    <!-- end image wrapper -->
+                    <!-- Begin Tab Section -->
+                    <div class="svfm2__tabs">
+                        <!-- Tab header -->
+                        <div class="svfm2__header">
+                            <div class="headline-container">
+                                <h2>Find your style</h2>
+                                <h3>Beard &amp; Mustache</h3>
+                            </div>
+                        </div>
+                        <!-- end tab header -->
+                        <!-- Tab Wrapper -->
+                        <div class="tabs__content" role="tabpanel" data-tab-id="svfm2-content-toggle">
+                            <!-- Tab List -->
+                            <ul id="svfm2Tab" class="nav nav-tabs nav-justified white-tabs" role="tablist">
+                                <!-- Tab Item -->
+                                <li id="beard-mustache" role="presentation" class="tab__control active" data-title="Beard & Mustache">
+                                    <a href="#beard" id="beard-tab" role="tab" data-toggle="tab" aria-controls="beard" aria-expanded="false">
+                                        <div class="tab-wrapper-icons">
+                                            <span class="tab-icon">
+                                        <i class="icon-sv-mustache"></i>
+                                    </span>
+                                            <span class="text">Beard &amp; Mustache</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- End Tab Item -->
+                                <!-- Tab Item -->
+                                <li id="shave" role="presentation" class="tab__control" data-title="Shave">
+                                    <a href="#shaving" role="tab" id="shaving-tab" data-toggle="tab" aria-controls="shaving" aria-expanded="false">
+                                        <div class="tab-wrapper-icons">
+                                            <span class="tab-icon">
+                                        <i class="icon-sv-razor"></i>
+                                    </span>
+                                            <span class="text">Shaving</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- End Tab Item -->
+                                <!-- Tab Item -->
+                                <li id="haircuts" role="presentation" class="tab__control" data-title="Hair Cuts">
+                                    <a href="#hair-cuts" role="tab" id="haircuts-tab" data-toggle="tab" aria-controls="hair-cuts" aria-expanded="false">
+                                        <div class="tab-wrapper-icons">
+                                            <span class="tab-icon">
+                                        <i class="icon-sv-scissors"></i>
+                                    </span>
+                                            <span class="text">Hair Cuts</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- End Tab Item -->
+                            </ul>
+                            <!-- End Tab list -->
+                            <!-- tab content -->
+                            <div id="myTabContent" class="tab-content">
+                                <!-- start breard and mustache -->
+                                <div role="tabpanel" class="tab-pane tab-fade active in" id="beard" aria-labelledby="beard-tab">
+                                    <div class="tab__panel">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h3>Stash craft</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <p>The perfect trim/blade shave or subtle grooming to your stache is minutes away with our expert mustache craftsmen, Jake and Noah, who make men out of those upper lip-warmers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item__link">
+                                            <a href="full-gallery.html">Show me the gallery<i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end breard and mustache -->
+                                <!-- start shaving -->
+                                <div role="tabpanel" class="tab-pane tab-fade" id="shaving" aria-labelledby="shaving-tab">
+                                    <div class="tab__panel">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h3>The Shave</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <p>Take it ALL off! Or not, your choice. Whatever you decide, our team of highly skilled masters of the blade will leave you feeling silky smooth. View our gallery to be facial beast-taming inspired.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item__link">
+                                            <a href="full-gallery.html">Show me the gallery<i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end shaving -->
+                                <!-- start haircut -->
+                                <div role="tabpanel" class="tab-pane tab-fade" id="hair-cuts" aria-labelledby="haircuts-tab">
+                                    <div class="tab__panel">
+                                        <div class="item">
+                                            <div class="title">
+                                                <h3>A real haircut</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <p>We’ve been cutting hair for 20 years, and like that bottle of scotch in your liquor cabinet, you’d better believe we’re getting better with age. Trust your hair in our chairs; we’ve got the gallery to prove it.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item__link">
+                                            <a href="full-gallery.html">Show me the gallery<i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end haircut -->
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                        <!-- end tab wrapper -->
+                    </div>
+                    <!-- end tab section -->
+                </div>
+                <!-- end feature module 2 wrapper -->
+            </div>
+            <!-- end section -->
+            <!-- Staggered Grid Section -->
+            <div class="section container-fluid white-bg">
+                <div class="inner-lg">
+                    <div class="sv__container--md">
+                        <div class="row staggered__container">
+                            <!-- Box -->
+                            <div class="box box-sm box-2 card-shadow-dk">
+                                <div class="box-overlay"></div>
+                                <img src="images/staggered-grid/shave-gallery-sm.jpg" alt="Popular Hair Styles">
+                                <div class="content">
+                                    <p>View our trending trims, styles + cuts</p>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-off"></i>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-on"></i>
+                                </div>
+                                <a href="full-gallery.html" class="box-link">View More</a>
+                            </div>
+                            <!-- End Box -->
+                            <!-- Box -->
+                            <div class="box box-lg box-1 card-shadow-dk">
+                                <div class="content">
+                                    <h3>First time visit?</h3>
+                                    <p>Click here to learn about us and never say that again.</p>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-off"></i>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-on"></i>
+                                </div>
+                                <div class="box-overlay"></div>
+                                <img src="images/staggered-grid/shave-first-visit.jpg" alt="First Visit">
+                                <a href="about.html" class="box-link"></a>
+                            </div>
+                            <!-- End Box -->
+                            <!-- Box -->
+                            <div class="box box-sm-hours box-4 card-shadow-dk">
+                                <div class="content">
+                                    <i class="fa fa-clock-o fa-lg clock"></i>
+                                    <p>our weekly shop hours</p>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-off"></i>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-on"></i>
+                                </div>
+                                <div class="box-overlay"></div>
+                                <img src="images/staggered-grid/shave-shop-hours.jpg" alt="Barbershop Hours">
+                                <a href="#shop-hours" class="box-link"></a>
+                            </div>
+                            <!-- End Box -->
+                            <!-- Tall Image  -->
+                            <div class="box box-sm-tall box-3 hidden-xs">
+                                <img src="images/staggered-grid/shave-comb.jpg" alt="BarberShop Tools">
+                            </div>
+                            <!-- End Tall Image -->
+                            <!-- Box -->
+                            <div class="box box-last box-1 card-shadow-dk">
+                                <div class="content">
+                                    <h3>Meet the Masters</h3>
+                                    <p>Hand pick the right barber for your specific needs</p>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-off"></i>
+                                    <i class="fa fa-long-arrow-right fa-lg animate-on"></i>
+                                </div>
+                                <div class="box-overlay"></div>
+                                <img src="images/staggered-grid/shave-meet-staff.jpg" alt="Meet the staff">
+                                <a href="team.html" class="box-link"></a>
+                            </div>
+                            <!-- Box -->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container md -->
+                </div>
+                <!-- end inner-lg -->
+            </div>
+            <!-- end section -->
+            <!-- Why Choose Us -->
+            <div id="whyus-skr" class="section container-fluid no-padding sv-approach-container">
+                <!--<div class="sv-approach" style="background-image: url(images/why-us/shave-choose-us.jpg);"></div>-->
+                <div class="parallax__background" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 300px;" data-top-bottom="background-position: 50% -250px;" style="background-image: url(images/why-us/shave-choose-us.jpg);"></div>
+                <div class="inner-lg">
+                    <div class="sv__container--md">
+                        <div class="sv-approach-wrapper">
+                            <div class="intro-md">
+                                <h6>Why choose us</h6>
+                                <h2>A new approach to an old problem</h2>
+                            </div>
+                            <div class="approach-list">
+                                <div class="approach-group hidden-xs">
+                                    <div class="approach-item">
+                                        <div class="approach-icon-wrapper">
+                                            <i class="icon-sv-arrows"></i>
+                                        </div>
+                                        <div class="approach-content">
+                                            <h6 class="title">Modern Techniques</h6>
+                                            <p>Our team is highly skilled and fluent in all of the latest trends, hair cutting, trimming, and shaving methods.</p>
+                                        </div>
+                                    </div>
+                                    <div class="approach-item">
+                                        <div class="approach-icon-wrapper">
+                                            <i class="icon-sv-products"></i>
+                                        </div>
+                                        <div class="approach-content">
+                                            <h6 class="title">Top of the line products</h6>
+                                            <p>We want you looking and feeling your best, plain and simple. That means we only use the best products.</p>
+                                        </div>
+                                    </div>
+                                    <div class="approach-item">
+                                        <div class="approach-icon-wrapper">
+                                            <i class="icon-sv-trophy"></i>
+                                        </div>
+                                        <div class="approach-content">
+                                            <h6 class="title">Priority on Service</h6>
+                                            <p>We’ll always go out of our way to meet your needs. Ask any staff member, and expect immediate service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn book-now-btn">Learn more</a>
+                            </div>
+                        </div>
+                        <!-- end wrapper -->
+                    </div>
+                    <!-- end container md -->
+                </div>
+                <!-- end inner-lg -->
+            </div>
+            <!-- end section -->
+            <!-- Buy Theme -->
+            <div class="section container-fluid no-padding gold-bg">
+                <div class="inner-md">
+                    <div class="row no-margin">
+                        <div class="buy__container">
+                            <div class="col-xs-12 buy-theme-sm">
+                                <h4 class="text-center white">Become a Master of the Blade. Own the Shave theme today!</h4>
+                                <a href="#" class="btn book-now-btn btn-white">Go Get It</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end inner-md -->
+            </div>
+            <!-- end section -->
+            <!-- 3 Col Module: Design -->
+            <div class="section container-fluid white-bg no-padding">
+                <div class="inner-lg">
+                    <!-- Sell Box -->
+                    <div class="sv__container--md col3__module">
+                        <!-- Intro -->
+                        <div class="col-sm-12 no-padding">
+                            <div class="intro">
+                                <h6>Stand Out</h6>
+                                <h2>Modern Design + Cool Features</h2>
+                                <h5>A niche theme specifically created for any barbershop needs</h5>
+                            </div>
+                          </div>
+                          <!-- End Intro -->
+                          <!-- Sell box featured image -->
+                          <div class="col-sm-12 no-padding">
+                              <img class="img-responsive" src="images/services/sell-box.jpg" alt="featured barber products">
+                          </div>
+                          <!-- Icon grid container -->
+                          <div class="col3__container">
+                              <div class="row wrapper">
+                                  <!-- Item 1 -->
+                                  <div class="col-sm-4">
+                                      <div class="col3__item">
+                                          <div class="icon__wrapper">
+                                              <i class="icon-sv-gears fa-3x"></i>
+                                          </div>
+                                          <div class="col3__item--content">
+                                              <h5>Great Features</h5>
+                                              <p>Seamless gallery view options, real time shop hours, image nav abilities and fully responsive, just to name a few.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Item 2 -->
+                                  <div class="col-sm-4">
+                                      <div class="col3__item">
+                                          <div class="icon__wrapper">
+                                              <i class="icon-sv-design fa-3x"></i>
+                                          </div>
+                                          <div class="col3__item--content">
+                                              <h5>Unique Page design</h5>
+                                              <p>Leave the right first impression of clean and on trend haircuts with the mirror image in site design.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Item 3 -->
+                                  <div class="col-sm-4">
+                                      <div class="col3__item">
+                                          <div class="icon__wrapper">
+                                              <i class="icon-sv-options fa-3x"></i>
+                                          </div>
+                                          <div class="col3__item--content">
+                                              <h5>tons of options</h5>
+                                              <p>Edit, replace, rearrange and tweak to your mouse finger’s content.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- end row -->
+                          </div>
+                          <!-- end icon container-->
+                      </div>
+                      <!-- end sell-box -->
+                  </div>
+                  <!-- end inner-lg -->
+              </div>
+              <!-- end section -->
+              <!-- featured blog posts -->
+              <div class="section container-fluid no-padding blog-container blog-featured">
+                  <!-- Black bar -->
+                  <div class="container-fluid no-padding black-bg">
+                      <div class="inner-lg">
+                          <div class="row no-margin">
+                              <div class="col-xs-12">
+                                  <div class="headline-lg">
+                                      <h2 class="text-center white">From the Blog</h2>
+                                  </div>
+                                  <h5 class="text-center white">We’re pretty obsessed with all things hair. We prove it here.</h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- end black bar -->
+                  <div class="row no-margin">
+                      <!-- item -->
+                      <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                          <div class="post-thumb-img" style="background-image: url('images/blog/blog-1.jpg')"></div>
+                          <a class="post-thumb-link" href="blog-details.html"></a>
+                          <div class="post-thumb-content">
+                              <div class="post-thumb-meta">
+                                  <span class="post-thumb-category">
+                          <a href="#" rel=" category tag">Haircuts</a>
+                      </span>
+                                  <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>June 30, 2018</span>
+                              </div>
+                              <h2 class="post-thumb-title"><a href="blog-details.html">Wet vs. Dry Cuts</a></h2>
+                          </div>
+                      </article>
+                      <!-- item -->
+                      <article class="col-xs-12 col-sm-6 no-padding post-thumb">
+                          <div class="post-thumb-img" style="background-image: url('images/blog/blog-4.jpg')"></div>
+                          <a class="post-thumb-link" href="blog-details.html"></a>
+                          <div class="post-thumb-content">
+                              <div class="post-thumb-meta">
+                                  <span class="post-thumb-category">
+                          <a href="#" rel=" category tag">Haircuts</a>
+                      </span>
+                                  <span class="post-thumb-time"><i class="fa fa-clock-o fa-lg"></i>June 12, 2018</span>
+                              </div>
+                              <h2 class="post-thumb-title"><a href="blog-details.html">Date Night Style Tips</a></h2>
+                          </div>
+                      </article>
+                  </div>
+                  <!-- end row -->
+              </div>
+              <!-- End blog -->
+              <!-- Contact Section -->
+              <div id="shop-hours" class="section container-fluid white-bg no-padding">
+                  <div class="inner-lg">
+                      <div class="sv__container--md">
+                          <div class="contact__wrapper">
+                              <div class="section__wrapper">
+                                  <!-- Contact Overview -->
+                                  <div class="contact__card">
+                                      <!-- Contact Image Left -->
+                                      <div class="contact__card--left">
+                                          <img class="img-responsive" src="images/contact/contact.jpg" alt="The Shave Barbershop HTML Theme">
+                                      </div>
+                                      <!-- end content left -->
+                                      <!-- Contact Content Right -->
+                                      <div class="contact__card--right">
+                                          <!-- Barbershop Location & Phone -->
+                                          <div class="contact__shop">
+                                              <div class="contact__card--content">
+                                                  <h3>Location</h3>
+                                                  <p>2355 Two Bits St.</p>
+                                                  <p>Grooming, CA 30003</p>
+                                                  <a class="phone" href="tel:123.456.7890">123.456.7890</a>
+                                              </div>
+                                          </div>
+                                          <!-- Barbershop Email -->
+                                          <div class="contact__us">
+                                              <div class="contact__us--content card-shadow-lt icon-up-down">
+                                                  <div class="inner__content">
+                                                      <h4>Get In Touch<i class="fa fa-paper-plane-o animate-down-2 top-i"></i><i class="fa fa-envelope-o fa-lg animate-down-1 bottom-i"></i></h4>
+                                                  </div>
+                                                  <a href="#">Email Us</a>
+                                              </div>
+                                          </div>
+                                          <!-- Barbershop Hours -->
+                                          <div class="contact__hours">
+                                              <div class="contact__card--content">
+                                                  <h3>Weekly Hours</h3>
+                                                  <p>Monday – Friday</p>
+                                                  <p>9am - 6pm</p>
+                                                  <p>Saturday and Sunday</p>
+                                                  <p>10am - 4pm</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- end content right -->
+                                  </div>
+                                  <!-- end contact card -->
+                              </div>
+                              <!-- end section wrapper -->
+                          </div>
+                          <!-- end contact wrapper -->
+                      </div>
+                      <!-- end container -->
+                  </div>
+                  <!-- end inner-lg -->
+              </div>
+              <!-- end section -->
+              <!-- Buy Theme -->
+              <div id="sell-skr" class="section sv__container--fluid no-padding">
+                  <div class="parallax__background" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 300px;" data-top-bottom="background-position: 50% -250px;" style="background-image: url(images/services/service-shave-parallax.jpg);">
+                      <div class="inner-lg">
+                          <div class="inner-lg">
+                              <div class="buy__container sv__container--md">
+                                  <div class="buy__content">
+                                      <h2>Change the way you see a shave</h2>
+                                      <p>It’s not just about haircuts - it’s putting the idea of a better cut in a client’s head - and then on their head. The Shave theme delivers this psychology with a clean, persuasive design paired with cool features in a fully responsive, coded-to-perfection HTML environment.</p>
+                                      <a href="#" class="btn book-now-btn btn-white">See More</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- end inner-lg -->
+                      </div>
+                      <!-- end inner-lg -->
+                  </div>
+                  <!-- end parallax bg -->
+              </div>
+              <!-- end section -->
+              <!-- Testimonials -->
+              <div class="section container-fluid no-padding white-bg">
+                  <div class="row no-margin">
+                      <div id="testimonial-carousel" class="carousel slide">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                              <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                              <!-- item -->
+                              <div class="item active">
+                                  <div class="sv__container--md">
+                                      <div class="col-sm-12 mobile-space-sm">
+                                          <div class="testimonial-wrapper">
+                                              <blockquote>
+                                                  <q>"No kidding, Jake is a serious blade master. Dude couldn&rsquo;t have steadier hands. I&rsquo;ll be back for sure"</q>
+                                                  <cite>-Adam D.</cite>
+                                              </blockquote>
+                                          </div>
+                                          <div class="testimonial-img">
+                                              <img class="img-responsive img-center active" src="images/testimonials/shave-testimonial-1.jpg" alt="Mobile Phone">
+                                          </div>
+                                          <!-- end image -->
+                                      </div>
+                                      <!-- end col-12 -->
+                                  </div>
+                              </div>
+                              <!-- item -->
+                              <div class="item">
+                                  <div class="sv__container--md">
+                                      <div class="col-sm-12 mobile-space-sm">
+                                          <div class="testimonial-wrapper">
+                                              <blockquote>
+                                                  <q>"Impressed. No wait, exceptional service. Exceeded expectations in every way."</q>
+                                                  <cite>-Ryan M.</cite>
+                                              </blockquote>
+                                          </div>
+                                          <div class="testimonial-img">
+                                              <img class="img-responsive img-center active" src="images/testimonials/shave-testimonial-2.jpg" alt="Mobile Phone">
+                                          </div>
+                                          <!-- end image -->
+                                      </div>
+                                      <!-- end col-12 -->
+                                  </div>
+                              </div>
+                              <!-- end item -->
+                          </div>
+                          <!-- end carousel-inner -->
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev">
+                              <span class="" aria-hidden="true"></span>
+                              <i class="icon-left-open-big testimonial-icon-left"></i>
+                              <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next">
+                              <i class="icon-right-open-big testimonial-icon-right"></i>
+                              <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                      <!-- end testimonial-carousel -->
+                  </div>
+                  <!-- end row -->
+              </div>
+              <!-- end section -->
+              <!-- Gold bar -->
+              <div class="section container-fluid no-padding gold-bg">
+                  <div class="inner-sm sv__container--md">
+                      <div class="row no-margin">
+                          <div class="col-xs-12">
+                              <h4 class="text-center white">You could say we’re a cut above the rest, but you&rsquo;d be forgetting trim and shave</h4>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- end gold bar -->
+          </main>
+          <!-- end main -->
+          <!--
+          #################################
+              - Footer -
+          #################################
+          -->
+          <footer class="loading">
+              <div class="sv__container--md">
+                  <!-- Footer Wrapper -->
+                  <div class="footer__wrapper">
+                      <div class="row footer__row">
+                          <!-- Footer Logo -->
+                          <div class="footer__logo no-padding">
+                              <div class="logo__container">
+                                  <div class="footer__logo--img">
+                                      <img class="img-responsive logo-white" src="images/shave-logo-white.png" alt="The Shave barbershop HTML theme" />
+                                  </div>
+                                  <h3>The Shave</h3>
+                                  <h4>Barbershop</h4>
+                              </div>
+                          </div>
+                          <!-- Footer Description -->
+                          <div class="footer__desc">
+                              <!-- email container -->
+                              <div class="email__wrapper">
+                                  <!-- email form -->
+                                  <div class="email__form form-group">
+                                      <form>
+                                          <!-- email input -->
+                                          <input type="email" class="form-control email__form--input" id="footer-email" name="EMAIL" required placeholder="Your Email Address">
+                                          <!-- subtext to email -->
+                                          <div class="email__offers">
+                                              <p>Stay updated on the latest + special offers and more.</p>
+                                          </div>
+                                          <!-- end sub-text -->
+                                          <button type="submit" class="btn book-now-btn form-btn">Submit</button>
+                                      </form>
+                                  </div>
+                                  <!-- end email form -->
+                              </div>
+                              <!-- end email container -->
+                              <!-- address container -->
+                              <div class="row footer__contact">
+                                  <!-- address -->
+                                  <div class="col-xs-12 col-sm-6 footer__address no-padding">
+                                      <p>2355 Two Bits St.</p>
+                                      <p>Grooming, CA 30003</p>
+                                  </div>
+                                  <!-- email -->
+                                  <div class="col-xs-12 col-sm-6 contact no-padding">
+                                      <a class="email" href="mailto:hello@theshave.com">hello@theshave.com</a>
+                                      <a class="phone" href="tel:123.456.7890">123.456.7890</a>
+                                  </div>
+                              </div>
+                              <!-- end address container -->
+                              <!-- social media -->
+                              <div class="row social-footer">
+                                  <div class="col-xs-12 col-sm-6 col-md-8">
+                                      <ul>
+                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                      </ul>
+                                  </div>
+                                  <!-- end col -->
+                                  <!-- copyright -->
+                                  <div class="col-xs-12 col-sm-6 col-md-4">
+                                      <div class="copyright">
+                                          <p>&copy; 2015 The Shave, LTD</p>
+                                      </div>
+                                  </div>
+                                  <!-- end col -->
+                              </div>
+                              <!-- end social media -->
+                          </div>
+                          <!-- end right side -->
+                      </div>
+                      <!-- end row -->
+                  </div>
+                  <!-- end container -->
+              </div>
+              <!-- end container md -->
+          </footer>
+          <!-- end foother -->
+          <!-- Book now modal -->
+          <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="row">
+                          <!-- Modal Section 1 -->
+                          <div class="col-xs-12 no-padding modal-info">
+                              <!-- Mobile close btn (hidden on larger screens) -->
+                              <button type="button" class="modal-close" aria-label="Close"><i class="fa fa-times"></i>
+                              </button>
+                              <!-- Section 1 content -->
+                              <div class="modal-bookNow" style="background-image: url(images/modal/modal-header.jpg);">
+                                  <h3>Book today</h3>
+                                  <h5>We are masters of the blade</h5>
+                              </div>
+                              <!-- end modal content -->
+                          </div>
+                          <!-- end modal section 1 -->
+                          <!-- Modal Section 2 new -->
+                          <div class="col-xs-12 no-padding">
+                              <div class="modal-form">
+                                  <ul class="book-list">
+                                      <li>
+                                          <a href="">
+                                              <div class="list-content">
+                                                  <i class="fa fa-phone fa-2x"></i>
+                                                  <span>Call ahead</span>
+                                                  <p>444-444-444</p>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="contact.html">
+                                              <div class="list-content">
+                                                  <i class="fa fa-map-marker fa-2x"></i>
+                                                  <span>Walk-ins welcome</span>
+                                                  <p>2020 Wilabee way, Atlanta Ga 30030</p>
+                                              </div>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="">
+                                              <div class="list-content">
+                                                  <i class="fa fa-paper-plane fa-2x"></i>
+                                                  <span>Say Hello</span>
+                                                  <p>info@theshave.com</p>
+                                              </div>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <!-- end modal-form -->
+                          </div>
+                          <!-- end modal section 2 -->
+                      </div>
+                      <!-- end row -->
+                  </div>
+                  <!-- end modal-content -->
+              </div>
+              <!-- end modal-dialog -->
+          </div>
+          <!-- End Modal -->
+          <!-- shave shop phone -->
+          <div class="sv-toast" data-toast="phone">
+              <div class="alert alert-success sv-phone" role="alert">
+                  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h2>Still using a phone?</h2>
+                  <p>Feel free to call us.</p>
+                  <img class="img-responsive" src="images/toast/phone-guy.jpg" alt="The Shave Phone Number" />
+                  <a href="" class="tele">303-303-3030</a>
+              </div>
+          </div>
+          <!-- end shop pimes -->
+          <!-- shave shop times -->
+          <div class="sv-toast" data-toast="hours">
+              <div class="alert alert-success sv-hours" role="alert">
+                  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <div class="toast-title">
+                      <h2>The Shop hours</h2>
+                      <h6>We're open</h6>
+                  </div>
+                  <div class="toast-hours">
+                      <p id="sv_time_monday" data-open="true">
+                          <span class="sv-day__title">Monday:</span>
+                          <span class="sv-day__time sv-day__open" data-day="Monday" data-hour="1" data-min="0" data-am="1:00am">1:00am</span>
+                          <span class="sv-day__time"> - </span>
+                          <span class="sv-day__time sv-day__close" data-day="Monday" data-hour="22" data-min="0" data-pm="10:00pm">10:00pm</span>
+                      </p>
+      
+                      <p id="sv_time_tuesday" data-open="true">
+                          <span class="sv-day__title">Tuesday:</span>
+                          <span class="sv-day__time sv-day__open" data-day="Tuesday" data-hour="7" data-min="0" data-am="7:00am">7:00am</span>
+                          <span class="sv-day__time"> - </span>
+                          <span class="sv-day__time sv-day__close" data-day="Tuesday" data-hour="20" data-min="30" data-pm="8:30pm">8:30pm</span>
+                      </p>
+                      <p id="sv_time_wednesday" data-open="false">
+                        <span class="sv-day__title">Wednesday:</span>
+                        <span class="sv-day__time" data-am="">Closed</span>
+                    </p>
+    
+                    <p id="sv_time_thursday" data-open="false">
+                        <span class="sv-day__title">Thursday:</span>
+                        <span class="sv-day__time" data-am="">Closed</span>
+                    </p>
+    
+                    <p id="sv_time_friday" data-open="true">
+                        <span class="sv-day__title">Friday:</span>
+                        <span class="sv-day__time sv-day__open" data-day="Friday" data-hour="0" data-min="0" data-am="12:00am">12:00am</span>
+                        <span class="sv-day__time"> - </span>
+                        <span class="sv-day__time sv-day__close" data-day="Friday" data-hour="12" data-min="0" data-pm="12:00pm">12:00pm</span>
+                    </p>
+    
+                    <p id="sv_time_saturday" data-open="true">
+                        <span class="sv-day__title">Saturday:</span>
+                        <span class="sv-day__time sv-day__open" data-day="Saturday" data-hour="7" data-min="0" data-am="7:00am">7:00am</span>
+                        <span class="sv-day__time"> - </span>
+                        <span class="sv-day__time sv-day__close" data-day="Saturday" data-hour="22" data-min="30" data-pm="10:30pm">10:30pm</span>
+                    </p>
+    
+                    <p id="sv_time_sunday" data-open="true">
+                        <span class="sv-day__title">Sunday:</span>
+                        <span class="sv-day__time sv-day__open" data-day="Sunday" data-hour="8" data-min="0" data-am="8:00am">8:00am</span>
+                        <span class="sv-day__time"> - </span>
+                        <span class="sv-day__time sv-day__close" data-day="Sunday" data-hour="22" data-min="30" data-pm="10:30pm">10:30pm</span>
+                    </p>
+    
+                </div>
+            </div>
+        </div>
+        <!-- end shop times -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+          ga('create', 'UA-71341704-1', 'auto');
+          ga('send', 'pageview');
+    
+        </script>
+        <!-- Plugins -->
+        <script src="scripts/jquery.menu-aim.js"></script>
+        <script src="scripts/modernizr.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/skrollr.min.js"></script>
+        <script src="scripts/imagesloaded.min.js"></script>
+        <script src="scripts/jquery-placeholder.min.js"></script>
+        <script src="scripts/jquery.prefetch.min.js"></script>
+        <script src="scripts/ScrollMagic.min.js"></script>
+        <script src="scripts/debug.addIndicators.min.js"></script>
+        <!-- Settings -->
+        <script src="scripts/window-settings.min.js"></script>
+        <script src="scripts/nav-settings.min.js"></script>
+        <script src="scripts/main-settings.min.js"></script>
+    
+        <script>
+        (function($) {
+        'use strict';
+            // Revolution Slider Settings
+            // ==========================================================================
+            var tpj = jQuery;
+            var sliderId = "#rev_slider_46_1";
+            var revapi46;
+            tpj(document).ready(function() {
+                if (tpj(sliderId).revolution == undefined) {
+                    revslider_showDoubleJqueryError(sliderId);
+                } else {
+                    revapi46 = tpj(sliderId).show().revolution({
+                        sliderType: "standard",
+                        jsFileLocation: "scripts/",
+                        sliderLayout: "fullscreen",
+                        dottedOverlay: "none",
+                        delay: 7000,
+                        navigation: {
+                            keyboardNavigation: "off",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation: "off",
+                            onHoverStop:"on",
+                            touch: {
+                                touchenabled: "on",
+                                swipe_threshold: 75,
+                                swipe_min_touches: 1,
+                                swipe_direction: "horizontal",
+                                drag_block_vertical: false
+                            },
+                            arrows: {
+                                style: "erinyen",
+                                enable: true,
+                                hide_onmobile: false,
+                                hide_under: 600,
+                                hide_onleave: false,
+                                hide_delay: 200,
+                                hide_delay_mobile: 1200,
+                                tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div>    <div class="tp-arr-img-over">   </div><span class="tp-arr-titleholder">{{title}}</span>     </div>',
+                                left: {
+                                    h_align: "left",
+                                    v_align: "center",
+                                    h_offset: 30,
+                                    v_offset: 0
+                                },
+                                right: {
+                                    h_align: "right",
+                                    v_align: "center",
+                                    h_offset: 30,
+                                    v_offset: 0
+                                }
+                            },
+                            thumbnails: {
+                                style: "gyges",
+                                enable: true,
+                                width: 100,
+                                height: 60,
+                                min_width: 60,
+                                wrapper_padding: 0,
+                                wrapper_color: "transparent",
+                                wrapper_opacity: "1",
+                                tmp: '<span class="tp-thumb-img-wrap">  <span class="tp-thumb-image"></span></span>',
+                                visibleAmount: 0,
+                                hide_onmobile: true,
+                                hide_under: 800,
+                                hide_onleave: false,
+                                direction: "horizontal",
+                                span: false,
+                                position: "inner",
+                                space: 0,
+                                h_align: "center",
+                                v_align: "bottom",
+                                h_offset: 0,
+                                v_offset: 20
+                            }
+                        },
+                        responsiveLevels: [1300, 1186, 977, 778, 480],
+                        gridwidth: [1400, 1186, 977, 778, 480],
+                        gridheight: [960, 868, 768, 960, 720],
+                        lazyType: "none",
+                        parallax: {
+                            type: "mouse",
+                            origo: "slidercenter",
+                            speed: 2000,
+                            levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+                            disable_onmobile: "on"
+                        },
+                        shadow: 0,
+                        spinner: "off",
+                        stopLoop: "off",
+                        stopAfterLoops: 3,
+                        shuffle: "off",
+                        autoHeight: "off",
+                        fullScreenAlignForce: "off",
+                        fullScreenOffsetContainer: "",
+                        fullScreenOffset: "0px",
+                        disableProgressBar: "on",
+                        hideThumbsOnMobile: "off",
+                        hideSliderAtLimit: 0,
+                        hideCaptionAtLimit: 0,
+                        hideAllCaptionAtLilmit: 0,
+                        debugMode: false,
+                        fallbacks: {
+                            simplifyAll: "off",
+                            nextSlideOnWindowFocus: "off",
+                            disableFocusListener: false,
+                        }
+                    });
+                }
+            }); /*ready*/
+    
+            $(window).bind('resizeEnd', function() {
+                $("#rev_slider_46_1").revredraw();
+            });
+            $(window).on('resize', function() {
+                if (this.resizeTO) clearTimeout(this.resizeTO);
+                this.resizeTO = setTimeout(function() {
+                    $(this).trigger('resizeEnd');
+                }, 500);
+            });
+    
+        })(jQuery);
+        </script>
+    </body>
+    
+    </html>
+    
